@@ -7,22 +7,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #e7eaf6;
 }
 
-img {
-  width: 300px;
+.image-container img {
+  width: 500px;
   height: 500px;
   object-fit: cover;
 }
 
 .carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   height: 530px;
-  width: 300px;
+  width: 500px;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .image-container {
   display: flex;
-  transform: translateX(-350px);
+  transform: translateX(0);
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  background-color: #e7eaf6;
+  justify-content: space-between;
+}
+
+.buttons-container button {
+  height: 30px;
+  border: none;
+  width: 49.5%;
+  background-color: #a2a8d3;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 200ms ease-in-out;
+}
+
+.buttons-container button:active,
+.buttons-container button:hover {
+  opacity: 0.85;
 }
