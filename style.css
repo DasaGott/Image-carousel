@@ -26,6 +26,7 @@ body {
 .image-container {
   display: flex;
   transform: translateX(0);
+  transition: all 0.8s ease-in-out;
 }
 
 .buttons-container {
